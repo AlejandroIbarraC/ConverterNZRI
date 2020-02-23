@@ -9,6 +9,6 @@ set(CMAKE_AUTOUIC ON)
 
 find_package(Qt5 COMPONENTS Core Gui Widgets Multimedia REQUIRED)
 
-add_executable(LD_P1 main.cpp ui/mainwindow.cpp ui/mainwindow.h ui/mainwindow.ui ui/converterwindow.cpp ui/converterwindow.h ui/converterwindow.ui ui/hammingwindow.cpp ui/hammingwindow.h ui/hammingwindow.ui logic/Converter.cpp logic/Converter.h)
+add_executable(LD_P1 main.cpp ui/mainwindow.cpp ui/mainwindow.h ui/mainwindow.ui ui/converterwindow.cpp ui/converterwindow.h ui/converterwindow.ui ui/hammingwindow.cpp ui/hammingwindow.h ui/hammingwindow.ui logic/Converter.cpp logic/Converter.h logic/hamming.cpp logic/hamming.h)
 
 target_link_libraries(LD_P1 Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Multimedia)
