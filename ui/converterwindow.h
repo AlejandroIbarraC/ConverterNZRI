@@ -12,6 +12,7 @@
 #include "../logic/Converter.h"
 #include "mainwindow.h"
 
+
 namespace Ui {
 class ConverterWindow;
 }
@@ -30,6 +31,7 @@ public:
 
 private:
     Ui::ConverterWindow *ui;
+
     QString bin;
     QLabel* bitArray[12];
     int state = 0;

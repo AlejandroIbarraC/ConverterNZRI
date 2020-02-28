@@ -5,6 +5,7 @@
 #include "converterwindow.h"
 #include "ui_converterwindow.h"
 
+
 using namespace std;
 ConverterWindow* ConverterWindow::window = nullptr;
 
@@ -38,7 +39,7 @@ void ConverterWindow::analyze() {
     QString entryData = ui->numEntry->displayText();
     if (entryData.length() != 4) {
         // Error. Entry isn't 4 digit long.
-        ui->errorLabel->setText("Error. Introduzca un dato de 4 dígitos.");
+        ui->errorLabel->setText("Error. Enter a 4 digit number.");
     } else {
         // Entry is 4 digit long.
         ui->numEntry->clear();
@@ -59,9 +60,10 @@ void ConverterWindow::analyze() {
 
             ui->binaryConversionResultLabel->setText(binaryResult);
             ui->hexConversionResultLabel->setText(hexResult);
+            ui->errorLabel->setText("");
         } else {
             // Error. Entry isn't an octal number.
-            ui->errorLabel->setText("Error. Introduzca un número octal.");
+            ui->errorLabel->setText("Error. Enter an octal number.");
         }
 
 
@@ -88,15 +90,15 @@ void ConverterWindow::on_backButton_clicked() {
 void ConverterWindow::paintEvent(QPaintEvent* event) {
     int x1 = 100;
     int x2 = 90;
-    int y1 = 90;
-    int y2 = 230;
+    int y1 = 180;
+    int y2 = 290;
     QPainter painter(this);
     QPen pen(Qt::black);
-    pen.setWidth(5);
+    pen.setWidth(3);
 
     painter.setPen(pen);
-    painter.drawLine(100, 90, 100, 230);
-    painter.drawLine(70, 160, 720, 160);
+    painter.drawLine(100, 180, 100, 290);
+    painter.drawLine(70, 240, 720, 240);
 
     pen.setWidth(1);
     painter.setPen(pen);
@@ -107,13 +109,13 @@ void ConverterWindow::paintEvent(QPaintEvent* event) {
 
     if (state == 1) {
         QPen pen2(Qt::red);
-        pen2.setWidth(5);
+        pen2.setWidth(3);
         painter.setPen(pen2);
         x1 = 100;
         x2 = 100;
-        y1 = 122;
-        y2 = 122;
-        bool high = true;
+        y1 = 275;
+        y2 = 300;
+        bool high = false;
 
         for (int i = 0; i < 12; i++) {
             if (bin[i] == '0') {

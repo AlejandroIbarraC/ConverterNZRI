@@ -10,6 +10,7 @@
 #include "converterwindow.h"
 #include "hammingwindow.h"
 
+
 namespace Ui {
 class mainWindow;
 }

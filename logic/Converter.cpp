@@ -6,8 +6,10 @@
 
 #include <cmath>
 
+
 /// Converts octal notation to binary
-/// @arg binaryNum number in binary notation
+/// @arg string binaryNum number in binary notation
+/// @return string of hex number
 string Converter::binaryToHex(string binaryNum) {
     int l = binaryNum.size();
     int t = binaryNum.find_first_of('.');
@@ -75,6 +77,7 @@ void Converter::initializeMap(unordered_map<string, char> *um) {
 
 /// Converts octal notation to binary
 /// @arg octalNum number in octal notation
+/// @return string converted number in binary
 string Converter::octalToBinary(string octalNum) {
     long int i = 0;
     string binary = "";

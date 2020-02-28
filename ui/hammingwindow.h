@@ -8,6 +8,8 @@
 #include <QMainWindow>
 
 #include "mainwindow.h"
+#include "../logic/Hamming.h"
+
 
 namespace Ui {
 class HammingWindow;
@@ -21,6 +23,11 @@ public:
     explicit HammingWindow(QWidget *parent = nullptr);
     ~HammingWindow();
 
+    QString actualInput;
+    int* actualParity;
+    bool state;
+
+    void forceError(int row, int column);
     static HammingWindow* getInstance();
 
 private:
@@ -28,8 +35,12 @@ private:
 
     static HammingWindow* window;
 
+    void analyze();
+
 private slots:
+    void on_analyzeButton_clicked();
     void on_backButton_clicked();
+    void on_inputTable_cellDoubleClicked(int row, int column);
 
 };
 
