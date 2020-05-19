@@ -50,7 +50,20 @@ The app was developed on macOS Catalina running Qt 5.14. As Qt is a cross-platfo
 
 ## Built With
 
-* [Qt 5](https://qt.io) - GUI Framework for C++
+<table>
+  <tr>
+    <td>
+      <p align=center><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPulCp1_2X95McIbF8PzbWQGzI1r9-eYUZZDfIgxpSLpt4zGoP&s" width="100"></p>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <p align=center><a href="https://www.qt.io/"><b>Qt5</b></a>
+      </br>GUI Framework for C++</p>
+    </td>
+  </tr>
+</table>
 
 ## Authors
 
@@ -66,5 +79,9 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Costa Rica Institute of Technology
 * Juan Carlos Jiménez Robles (a.k.a Bigotes)
 * Kevin Cordero - [Skryfall](https://github.com/Skryfall)
+
+<p align="center">
+  <img src="https://amin-ahmadi.com/wp-content/uploads/2016/12/Built_with_Qt_RGB_logo_vertical.png" width="40"/>
+</p>
 ```
 
